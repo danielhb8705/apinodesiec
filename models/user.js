@@ -172,8 +172,6 @@ userModel.login = function(username, password){
                                 NOMBRE: result[0]["displayName"],
 								EMAIL:	result[0]['username']
 								
-
-                                displayName: result[0]["displayName"]
                             }
                             resolve({
                                 result: true,

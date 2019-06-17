@@ -5,7 +5,7 @@ const config = {
         password: "yarianna",
         database: "test"
     },
-    token_name: 'access-token'
+    token_name: 'token'
 }  
 
 module.exports = config;

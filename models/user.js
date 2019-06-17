@@ -168,7 +168,9 @@ userModel.login = function(username, password){
                                 {expiresIn: 86400}
                             );
                             const info = {
-                                displayName: result[0]["displayName"]
+                                NOMBRE: result[0]["displayName"],
+								EMAIL:	result[0]['username']
+								
                             }
                             resolve({
                                 result: true,

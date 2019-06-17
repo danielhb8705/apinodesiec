@@ -6,6 +6,7 @@ router.get('/', function(req, res, next) {
   res.status(403).send('Forbidden');
 });
 
+
 router.post('/getDepartamentos', function(req, res, next) {
 	datosCOI.getDepartamentos()
     .then((response) => {
@@ -42,11 +43,11 @@ router.post('/getDatosCuentasXDpto', function(req, res, next) {
 		
 		res.status(200).json(response);
 		
+
     })
     .catch((error) => {
         res.status(500).json(error);
     });
-	
-	
+
 });
 module.exports = router;

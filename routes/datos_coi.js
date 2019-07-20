@@ -18,8 +18,8 @@ router.post('/getDepartamentos', function(req, res, next) {
 });
 //Obtener Datos para todas las cuentas
 router.post('/getDatosCuentas', function(req, res, next) {
-	var mes = req.body.month;
-	var anhio = req.body.anhio;
+	var mes = req.body[0].month;
+	var anhio = req.body[0].anhio;
 	
 	//console.log(mes);
 	datosCOI.getDatosCuentas(mes,anhio)
@@ -36,8 +36,8 @@ router.post('/getDatosCuentas', function(req, res, next) {
 });
 //Obtener Datos para todas las cuentas
 router.post('/getDatosCuentasXDpto', function(req, res, next) {
-	var mes = req.body.month;
-	var anhio = req.body.anhio;
+	var mes = req.body[0].month;
+	var anhio = req.body[0].anhio;
 	//console.log(mes);
 	datosCOI.getDatosCuentasXDpto(mes,anhio)
     .then((response) => {

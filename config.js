@@ -2,8 +2,8 @@ const config = {
     db: {
         host: "localhost",
         user: "root",
-        password: "yarianna",
-        database: "test"
+        password: "imnc2018$$1",
+        database: "imnccoi"
     },
 
     token_name: 'token'

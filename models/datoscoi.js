@@ -11,7 +11,7 @@ const con = mysql.createConnection(config.db);
 options.host = '127.0.0.1';
 options.port = 3050;
 
-options.database = 'C:\\COI80EMPRE6.FDB';
+options.database = 'C:\\Dac\\Sistemas Aspel\\COI8.00\\Datos\\Empresa6\\COI80EMPRE6.FDB';
 
 //options.database = 'D:\\COI80EMPRE6.FDB';
 options.user = 'SYSDBA';

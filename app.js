@@ -62,7 +62,7 @@ app.use('/app', function(req, res, next){
 });
 
 
-
+app.get('/reporte/*', (req, res) => res.sendFile(path.join(__dirname, 'public/index.html')));
 app.use('/', index);
 app.use('/app/users', users);
 app.use('/auth', auth);
